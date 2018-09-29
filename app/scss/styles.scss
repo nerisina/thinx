@@ -1,0 +1,31 @@
+/*  */
+@font-face {
+    font-family: 'Graphik';
+    font-style: normal;
+    src: url(../fonts/Graphik-Medium.otf);
+}
+body{
+  font-family: 'Graphik';
+}
+/* Product Page */
+.product-page{
+}
+
+/* Product Item */
+.product-item{
+  background: #f8f8f8;
+  height: 100vh;
+  .description{
+    margin: auto;
+  }
+  .images{
+    display: grid;
+    justify-content: center;
+    position: sticky;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .price{
+    margin: auto;
+  }
+}
