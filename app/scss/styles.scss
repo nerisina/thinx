@@ -1,24 +1,16 @@
 /*  */
 @font-face {
-    font-family: 'Graphik';
-    font-style: normal;
-    src: url(../fonts/Graphik-Medium.woff) format('woff'), url(../fonts/Graphik-Medium.ttf) format('truetype');
+  font-family: 'Graphik';
+  font-style: normal;
+  src: url("../fonts/Graphik-Medium.woff") format('woff'), url("../fonts/Graphik-Medium.ttf") format('truetype');
 }
-body{
+
+body {
   font-family: 'Graphik';
 }
 
-/* Product Page */
-.product-page{
-  padding: 10%;
-  a{
-    display: inline-block;
-    color: #000;
-  }
-}
-
 /* Product Item */
-.product-item-container{
+.product-item-container {
   font-family: 'Graphik';
   font-style: normal;
   font-size: 14px;
@@ -30,79 +22,162 @@ body{
   line-height: 28px;
 }
 
-.product-description{
+.product-description-col {
   margin: auto;
-  div{
-    width: 400px;
-  p:first-child{
-    text-transform: uppercase;
-  }
-  }
-}
 
-.product-details-col{
-  margin: auto;
-  .product-details{
-    width: 400px;
-  }
-}
+  .product-description {
+    width: 80%;
 
-  .product-images{
-    display: grid;
-    justify-content: center;
-    position: sticky;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-
-  .product-price{
-    margin: auto;
-  }
-
-  .product-color{
-    display: flex;
-    border: 1px solid #000;
-    flex-direction: row;
-    span{
-      flex-grow:1;
-      padding-left: 15px;
-      border-left: 1px sold #000;
-
-        &.black{
-          color: #fff;
-          background: #000;
-        }
-        &.beige{
-          background: #f0dfcf;
-        }
+    p:first-child {
+      text-transform: uppercase;
     }
   }
-  
-  .product-quantity{
-    display: flex;
-    flex-direction: row;
-    a,span{
+}
+
+.product-details-col {
+  margin: auto;
+
+  .product-details {
+    width: 80%;
+
+    div {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.product-images {
+  display: grid;
+  justify-content: center;
+  position: sticky;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  img {
+    max-height: 90vh;
+    margin: 40px auto;
+  }
+}
+
+.product-price {
+  margin: auto;
+}
+
+.product-color {
+  display: flex;
+  border: 1px solid #000;
+  flex-direction: row;
+
+  span {
+    flex-grow: 1;
+    padding-left: 15px;
+    border: 1px #000;
+
+    &.black {
+      color: #fff;
+      background: #000;
+    }
+
+    &.beige {
+      background: #f0dfcf;
+    }
+  }
+}
+
+.product-size {
+  .dropdown {
+    button {
       display: inline-block;
-      border: 1px solid #000;
-      padding: 0 10px;
-      color: #000;
-    }
-    span{
-      flex-grow: 2;
-    }
-  }
-  .product-size{
-    a{
-      color: #000;
-      text-decoration: underline;
-      font-size: 12px;
-    }
-  }
-  .product-add-to-cart{
-    button{
       width: 100%;
-    }
-    a{
-      color:#000;
+      border: 1px solid #000;
+      background: #fff;
+      color: #000;
+      border-radius: 0;
+      font-size: 14px;
+      text-align: left;
+
+      &.dropdown-toggle {
+        background: #000;
+        color: #fff;
+        &:after{
+          border: none;
+        }
+        i{
+          float: right;
+          margin-top: 3px;
+        }
+      }
     }
   }
+
+  .dropdown-menu{
+    width: 100%;
+    border-radius: 0px;
+    border: 1px solid #000;
+    margin-top: 0px;
+    padding: 0px;
+    top: -1px;
+    a{
+      text-transform: uppercase;
+      text-decoration: none;
+      &:hover{
+        color: #fff;
+        background: #000;
+      }
+    }
+  }
+}
+
+.product-quantity {
+  display: flex;
+  flex-direction: row;
+
+  a,
+  span {
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 0 15px;
+    color: #000;
+  }
+
+  span {
+    text-align: center;
+    flex-grow: 2;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.product-size {
+  a {
+    color: #000;
+    text-decoration: underline;
+    font-size: 12px;
+  }
+}
+
+.product-add-to-cart {
+  button {
+    width: 100%;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    border: none;
+  }
+  a {
+    color: #000;
+  }
+}
+
+/* Product Page */
+.product-page {
+  padding: 10%;
+  align-items:center;
+  a {
+    display: inline-block;
+    color: #000;
+  }
+  .row{
+    align-items: center;
+  }
+}

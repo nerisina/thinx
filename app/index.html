@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/css/styles.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>THINX</title>
 </head>
@@ -19,15 +19,16 @@
   <div class="container-fluid">
     <!-- Product Item -->
     <div class="row product-item-container">
-      <div class="col product-description">
-        <div>
+      <div class="col product-description-col">
+        <div class="product-description">
           <p>Hi - Waist</p>
           <p>Heavy days. Hold up to 2 tampon's worth</p>
           <p>The phrase treat "yo'self" reaches new belly-buttons brushing heights with the Hi-Waist, and it's here just in time to cut seasons</p>
         </div>
       </div>
+
       <div class="col product-images">
-        <img src="images/top/highwaist_black_front_3_1024x1024.jpg" alt="Highwaist Black Front 3" />
+        <img src="images/top/highwaist_black_front_3_1024x1024.jpg" alt="Highwaist Black Front 3" class="img-fluid" />
         <img src="images/top/highwaist_black_back_1024x1024.jpg" alt="Highwaist Black Front 3" />
         <img src="images/top/highwaist_black_side_1024x1024.jpg" alt="Highwaist Black Front 3" />
         <img src="images/top/highwaist_black_front_3_1024x1024.jpg" alt="Highwaist Black Front 3" />
@@ -44,7 +45,7 @@
 
           <div class="product-color">
             <span>color</span>
-            <span class="black">black</span>
+            <span class="black">black <i class="fa fa-check"></i></span>
             <span class="beige">beige</span>
           </div>
 
@@ -56,7 +57,7 @@
 
           <div class="product-size">
             <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">size</button>
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">size<i class="fa fa-angle-down"></i></button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="#">xs</a>
                 <a class="dropdown-item" href="#">s</a>
@@ -65,8 +66,8 @@
                 <a class="dropdown-item" href="#">xl</a>
                 <a class="dropdown-item" href="#">xxl</a>
               </div>
+              <a href="#">What is my size?</a>
             </div>
-            <a href="#">What is my size?</a>
           </div>
 
           <div class="product-add-to-cart">
@@ -78,41 +79,45 @@
     </div>
     <!-- Product Page Button -->
     <div class="product-page">
+
       <div class="row">
         <div class="col">
-          <img src="images/bottom/thinx_productpage_-04.jpg" alt="Hiphugger" class="img-fluid">
+          <img class="img-fluid" src="images/bottom/thinx_productpage_-04.jpg" alt="Hiphugger">
           <a href="#">shop hiphugger</a>
           <span>heavy days</span>
         </div>
-        <div class="col product-images-container">
-          <img src="images/bottom/thinx_productpage_-03.jpg" alt="Cheeky">
+
+        <div class="col">
+          <img class="img-fluid" src="images/bottom/thinx_productpage_-03.jpg" alt="Cheeky">
           <a href="#">shop cheeky</a>
           <span>light days</span>
         </div>
       </div>
+
       <div class="row">
         <div class="col">
-          <img src="images/bottom/thinx_productpage_-05.jpg" alt="Hiphugger">
+          <img class="img-fluid" src="images/bottom/thinx_productpage_-05.jpg" alt="Hiphugger">
           <a href="#">shop thong</a>
           <span>lightes days</span>
         </div>
       </div>
+
       <div class="row">
         <div class="col">
-          <img src="images/bottom/thinx_productpage_-06.jpg" alt="Hiphugger">
+          <img class="img-fluid" src="images/bottom/thinx_productpage_-06.jpg" alt="Hiphugger">
           <a href="#">shop sport</a>
           <span>medium days</span>
         </div>
         <div class="col">
-          <img src="images/bottom/thinx_productpage_-07.jpg" alt="Cheeky">
+          <img class="img-fluid" src="images/bottom/thinx_productpage_-07.jpg" alt="Cheeky">
           <a href="#">shop cheeky</a>
           <span>light days</span>
         </div>
       </div>
+
     </div>
   </div>
 
-  <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
