@@ -1,1 +1,10 @@
-console.log('This is the Main.js file. It should be the 3rd and final file');
+
+// Toggle Class on color selection
+
+$( ".product-color .product-item-color" ).each(function() {
+  $( this ).on('click', function(){
+    $(this).find('i').toggleClass( "fa-check" );
+  });
+});
+
+// Quantity

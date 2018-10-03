@@ -19,7 +19,7 @@
   <div class="container-fluid">
     <!-- Product Item -->
     <div class="row product-item-container">
-      <div class="col product-description-col">
+      <div class="col-3 product-description-col">
         <div class="product-description">
           <p>Hi - Waist</p>
           <p>Heavy days. Hold up to 2 tampon's worth</p>
@@ -27,15 +27,15 @@
         </div>
       </div>
 
-      <div class="col product-images">
-        <img src="images/top/highwaist_black_front_3_1024x1024.jpg" alt="Highwaist Black Front 3" class="img-fluid" />
-        <img src="images/top/highwaist_black_back_1024x1024.jpg" alt="Highwaist Black Front 3" />
-        <img src="images/top/highwaist_black_side_1024x1024.jpg" alt="Highwaist Black Front 3" />
-        <img src="images/top/highwaist_black_front_3_1024x1024.jpg" alt="Highwaist Black Front 3" />
-        <img src="images/top/highwaist_black_front_3_1024x1024.jpg" alt="Highwaist Black Front 3" />
+      <div class="col-6 product-images">
+        <div><img src="images/top/highwaist_black_front_3_1024x1024.jpg" alt="Highwaist Black Front 3" class="img-fluid" /></div>
+        <div><img src="images/top/highwaist_black_back_1024x1024.jpg" alt="Highwaist Black Front 3" class="img-fluid" /></div>
+        <div><img src="images/top/highwaist_black_side_1024x1024.jpg" alt="Highwaist Black Front 3" class="img-fluid" /></div>
+        <div><img src="images/top/highwaist_black_front_3_1024x1024.jpg" alt="Highwaist Black Front 3" class="img-fluid" /></div>
+        <div><img src="images/top/highwaist_black_front_3_1024x1024.jpg" alt="Highwaist Black Front 3" class="img-fluid" /></div>
       </div>
 
-      <div class="col product-details-col">
+      <div class="col-3 product-details-col">
 
         <div class="product-details">
 
@@ -44,14 +44,23 @@
           </div>
 
           <div class="product-color">
-            <span>color</span>
-            <span class="black">black <i class="fa fa-check"></i></span>
-            <span class="beige">beige</span>
+            <div><span>color</span></div>
+            <div>
+              <label class="product-item-color black">
+              black
+              <input type="radio" name="product-item-color" value="black" checked>
+            </label>
+            </div>
+            <div>
+              <label class="product-item-color beige">beige
+              <input type="radio" name="product-item-color" value="beige">
+            </label>
+            </div>
           </div>
 
           <div class="product-quantity">
-            <a href="#" class="plus"> + </a>
-            <span>quantity</span>
+            <button type="button" class="plus"> + </button>
+            <span>quantity ()</span>
             <a href="#" class="minus"> - </a>
           </div>
 
@@ -78,38 +87,38 @@
       </div>
     </div>
     <!-- Product Page Button -->
-    <div class="product-page">
+    <div class="product-page-related">
 
-      <div class="row">
-        <div class="col">
+      <div class="row justify-content-around">
+        <div class="col-5">
           <img class="img-fluid" src="images/bottom/thinx_productpage_-04.jpg" alt="Hiphugger">
           <a href="#">shop hiphugger</a>
           <span>heavy days</span>
         </div>
 
-        <div class="col">
+        <div class="col-4">
           <img class="img-fluid" src="images/bottom/thinx_productpage_-03.jpg" alt="Cheeky">
           <a href="#">shop cheeky</a>
           <span>light days</span>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col">
+      <div class="row justify-content-around">
+        <div class="col-5">
           <img class="img-fluid" src="images/bottom/thinx_productpage_-05.jpg" alt="Hiphugger">
           <a href="#">shop thong</a>
           <span>lightes days</span>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col">
-          <img class="img-fluid" src="images/bottom/thinx_productpage_-06.jpg" alt="Hiphugger">
+      <div class="row justify-content-around">
+        <div class="col-5">
+          <img class="img-fluid" src="images/bottom/thinx_productpage_-07.jpg" alt="Hiphugger">
           <a href="#">shop sport</a>
           <span>medium days</span>
         </div>
-        <div class="col">
-          <img class="img-fluid" src="images/bottom/thinx_productpage_-07.jpg" alt="Cheeky">
+        <div class="col-4">
+          <img class="img-fluid" src="images/bottom/thinx_productpage_-08.jpg" alt="Cheeky">
           <a href="#">shop cheeky</a>
           <span>light days</span>
         </div>
@@ -122,6 +131,8 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- main js -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
