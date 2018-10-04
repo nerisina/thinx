@@ -28,11 +28,9 @@ $('.dropdown-menu').find('a').click(function() {
 });
 
 // Active class carousel for mobile
-$(window).resize(function() {
   var screenSize = document.body.clientWidth;
   if (screenSize < 576) {
-    $('.mobile-carousel').removeClass('visible');
-  } else if (screenSize >= 576) {
-    $('.mobile-carousel').addClass('visible');
-  };
-});
+    $('.product-images').carousel();
+    $('.product-images div').addClass('carousel-item');
+    $('.product-images').data('data-ride', 'carousel');
+}
