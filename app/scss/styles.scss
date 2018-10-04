@@ -248,7 +248,6 @@ a {
 
       a {
         display: block;
-        text-transform: capitalize;
         text-decoration: underline;
         color: #000;
         margin-top: 20px;
@@ -257,5 +256,23 @@ a {
       span {
         font-size: 12px;
       }
+    }
+  }
+
+
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+
+  }
+
+  /* Small devices (landscape phones, 576px and up) */
+  @media (max-width: 576px) {
+    .product-item-container{
+      padding: 0px;
+    }
+    .product-images{
+      order: 1;
+      -webkit-order: 1;
     }
   }

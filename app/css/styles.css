@@ -180,9 +180,17 @@ a {
     margin-bottom: 5%; }
     .product-page-related .row a {
       display: block;
-      text-transform: capitalize;
       text-decoration: underline;
       color: #000;
       margin-top: 20px; }
     .product-page-related .row span {
       font-size: 12px; }
+
+/* Medium devices (tablets, 768px and up) */
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .product-item-container {
+    padding: 0px; }
+  .product-images {
+    order: 1;
+    -webkit-order: 1; } }
