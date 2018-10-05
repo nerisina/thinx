@@ -29,8 +29,18 @@ $('.dropdown-menu').find('a').click(function() {
 
 // Active class carousel for mobile
   var screenSize = document.body.clientWidth;
+  var pimgc = $('.product-images-container');
+  var i = 0;
   if (screenSize < 576) {
-    $('.product-images').carousel();
+    $('.carousel').carousel('pause');
+    $('.product-images-container').addClass('carousel slide');
+    $('.product-images-container').attr('data-ride', 'carousel');
+    $('.product-images-container').append( '<ol class="carousel-indicators"></ol>');
+    $('.product-images div').each(function(){
+        $('.product-images-container ol').append('<li data-slide-to="' + i +'"></li>');
+        i++;
+    });
+    $('.product-images').addClass('carousel-inner');
     $('.product-images div').addClass('carousel-item');
-    $('.product-images').data('data-ride', 'carousel');
+    $('.product-images div').first().addClass('active');
 }
